@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap');
+    </style>
+    <link rel="stylesheet" href="./styles/tellUs.css">
 </head>
+
 <body>
-    <div>Navigation</div>
+    <div id="tellUs">
+        <h3>Tell us what you need, and we'll help you get it for you</h3>
+        <div id="box">
+            <div>
+                <h4>I want to search</h4>
+                <input class="inp" type="text" placeholder="Cosmetics, Hair & Beauty Products" id="want">
+            </div>
+            <div>
+                <h4>Name</h4>
+                <input class="inp" type="text" placeholder="Enter Name here" id="name">
+            </div>
+            <div>
+                <h4>Quantity</h4>
+                <input class="inp" type="number" placeholder="Enter Quantity required" id="qty">
+            </div>
+            <div>
+                <h4>Briefly describe your requirement</h4>
+                <textarea  cols="30" rows="5" type="text" placeholder="Additional details about your requirement" id="brief"></textarea>
+            </div>
+        </div>
+        <button id="btn">Submit Requirement</button>
+    </div>
 </body>
+
 </html>
