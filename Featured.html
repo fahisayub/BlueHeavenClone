@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap');
+
+        h1{
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        #container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(1, 500px);
+            gap: 15px;
+        }
+
+        #container>div {
+            border: 1px solid rgb(216, 206, 206);
+            padding: 10px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        #pri {
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            height: 50%;
+            width: 80%;
+            border: 1px solid rgb(216, 206, 206);            
+        }
+
+        h3{
+            margin: -3px;
+            cursor: pointer;
+        }
+
+        h3:hover{
+            text-decoration: underline;
+        }
+        button{
+            border: none;
+            padding: 10px 25px 10px 25px;
+            color: white;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        button:hover{
+            filter: brightness(95%);
+            cursor: pointer;
+        }
+
+        #blue{
+            color: blue;
+        }
+
+        #blue:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Featured Recommendations</h1>
+    <div id="container"></div>
+</body>
+
+</html>
+
+<script>
+    var container = document.querySelector("#container")
+    var readytoShip = [
+        {
+            image_url: "https://5.imimg.com/data5/SELLER/Default/2021/12/KG/WS/SD/742923/unique-bottle-mop-250x250.png",
+            productName: 'Bottle Mop',
+            price: "Rs 140" ,           
+            brand: '✅ Mansi Beauty Zone',
+            location: 'Madurai, Tamil Nadu',
+            call: '☏ CALL 09932654987'
+        },
+        {
+            image_url: 'https://5.imimg.com/data5/SELLER/Default/2022/1/CA/EX/VM/52181736/miss-rose-hot-and-soft-matte-lipstick-250x250.jpeg',
+            productName: 'Rose and Soft Matte Lipstick',
+            price: "Rs 54" ,          
+            brand: '✅ Dream Shades',
+            location: 'Pattanakad, Alappuzha, Kerala',
+            call: '☏ CALL 08204779941'
+        }
+        ,
+        {
+            image_url: 'https://5.imimg.com/data5/JZ/WC/SL/SELLER-2197889/coat-me-bonjour-paris-metallic-shine-black-lipstick-s31-250x250.JPG',
+            productName: 'Coat Me Bonjour Paris Metallic Shine Black Lipstick-S31',
+            price: "Rs 395", 
+            brand: '✅Indus Trade Links Private Limited',
+            location: 'Kirti Nagar, New Delhi, Delhi',
+            call: '☏ CALL 08204787665'
+        },
+        {
+            image_url: 'https://5.imimg.com/data5/RG/MF/LE/SELLER-980126/5-250x250.jpg',
+            productName: 'Sparkel Red Clip And Fit Mop',
+            price: "Rs 98.33",
+            brand: '✅ Garima Collection',
+            location: 'Kirti Nagar, New Delhi, Delhi',
+            call: '☏ CALL 08204722351'
+        }];
+
+    readytoShip.map(function (elem) {
+        var box = document.createElement("div")
+
+        var img = document.createElement("img")
+        img.src = elem.image_url
+
+        var name = document.createElement("h3")
+        name.setAttribute("id", "blue")
+        name.innerText = elem.productName
+
+        var div = document.createElement("div")
+        div.setAttribute("id", "pri")
+
+        var price = document.createElement("h4")
+        price.innerText = elem.price
+        var p = document.createElement("p")
+        p.innerText = "/piece"
+        p.style.fontSize = "20px"
+        p.style.color = "gray"
+        div.append(price, p)
+
+        var brand = document.createElement("h3")
+        brand.innerText = elem.brand
+        // brand.style.
+
+        var loco = document.createElement("p")
+        loco.innerText= elem.location
+
+        // var call = document.createElement("h3")
+        // call.innerText= elem.call
+
+        var btn = document.createElement("button")
+        btn.innerText= 'Contact Supplier'
+        btn.style.backgroundColor = "teal"
+
+        box.append(img, name, div, brand,loco, btn)
+        container.append(box)
+    }) 
+</script>
