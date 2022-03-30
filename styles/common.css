@@ -1,6 +1,28 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
+/* -----------------------------------Review and Rating--------------------------------------------------- */
+#rating{
+    display: flex;
+    margin:auto;
+}
+#title{
+    text-align: center;
+    
+}
+#title>h2{
+    margin-bottom: 0px;
+}
+#line{
+    width: 30px;
+    height: 3px;
+    background-color: rgb(5, 5, 134);
+    margin:auto;
+    margin-top: 0px;
+}
+#fullstar,#halfstar{
+    color:rgb(222, 226, 3);
+}
 
 /* --------------------------------get in touch with us------------------------------------------------ */
 .get-itws{
