@@ -1,0 +1,136 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* --------------------------------get in touch with us------------------------------------------------ */
+.get-itws{
+    background-color: #f8f8f8;
+    /* border: 1px solid black; */
+}
+.get-itws>.heading{
+    background-color:rgb(6, 6, 165);
+    color:white;
+    padding:10px;
+    padding-left: 10px;
+    
+}
+.get-itws h2{
+    font-size: 30px;
+    margin:0;
+  
+}
+.content{
+    height: 400px;
+    display: flex;
+    padding: 10px;
+}
+.content>div{
+    margin-left: auto;margin-right: auto;
+    /* border: 1px solid black; */
+    width: 25%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#ourcompany{
+   align-content: center;
+
+}
+
+#share{
+    display:flex;
+}
+
+#ourcompany a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+#share{
+    margin:150px 0px 0px 0px;
+    justify-content: space-evenly;
+}
+#share p{
+   margin-top: 0px;
+   font-size: 18px;
+}
+
+i{
+    font-size: larger;
+}
+#leavemessage{
+    
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;   
+}
+#rd-label{
+
+  text-align: left;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: -2px;
+    font-size: 12px;
+    padding:5px 10px 4px;
+    background-color: white;
+    width: 125px;
+}
+
+#direction{
+    margin-top:0px;
+    color:rgb(6, 168, 231);
+}
+
+#manager{
+font-size: 18px;
+
+}
+#contact{
+    font-size: 18px;
+}
+#contact a{
+    font-weight: 600;
+    color:black;
+    text-decoration: none;
+}
+
+#ext{
+    color:#026860;
+    font-size: 18px;
+    font-weight: 600;
+}
+#messagebtns>button{
+padding: 5px 20px 5px 20px;
+font-size: 20px;
+border-radius: 5px;
+margin:auto;
+border:1px solid #026860;
+}
+#smsbtn{
+    color:white;
+    background-color: #026860;
+}
+#emailbtn{
+    color: #026860;
+}
+#sendbtn{
+margin-top: 10px;
+padding: 10px 20px 10px 20px;
+font-size: 17px;
+border-radius: 5px;
+border:none;
+color:white;
+background-color: #026860;
+
+}
+#leave-hi{
+    color:rgb(6, 6, 165);;
+    font-size: 20px;
+    
+}
+#leave-hi>span{
+    font-weight: 600;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
