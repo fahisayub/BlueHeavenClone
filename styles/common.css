@@ -2,10 +2,13 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 /* -----------------------------------Review and Rating--------------------------------------------------- */
-#rating{
-    display: flex;
-    margin:auto;
+#ratings{
+display: flex;
+padding:20px;
+gap:120px;
+    
 }
+
 #title{
     text-align: center;
     
@@ -20,8 +23,119 @@
     margin:auto;
     margin-top: 0px;
 }
-#fullstar,#halfstar{
+.fullstar,#halfstar{
     color:rgb(222, 226, 3);
+}
+.starbar{
+    display: flex;
+    gap: 10px;
+    align-content: center;
+    margin: auto;
+    text-align: center;
+}
+#review div,h3{
+margin-top: 15px;
+}
+#star>p{
+    font-size: larger;
+    color: grey;
+}
+#resbox{
+display: flex;
+}
+.userreview{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+#thump i{
+    color:rgb(2, 173, 2);
+}
+.user{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: rgb(194, 190, 190);
+    text-align: center;
+    box-sizing: border-box;
+    padding: 15px;
+}
+#enlarge{
+    font-size:xx-large;
+    font-weight: 600;
+}
+.rvname{
+    font-weight: 600;
+}
+#perstar>div{
+margin-top: 10px;
+}
+
+.pbar{
+    width: 200px;
+    height: 10px;
+    background-color: rgb(230, 227, 227);
+    border-radius:5px;
+}
+
+.rpbar{
+    width: 250px;
+    height: 10px;
+    background-color: rgb(230, 227, 227);
+    border-radius:5px;
+}
+.prog{
+    height: 100%;
+    border-radius:5px;
+}
+#prog5{
+width: 80%;
+background-color:rgb(106, 173, 5);
+}
+#prog4{
+    width: 20%;
+    background-color:rgb(106, 173, 5);
+}
+#prog1{
+    width: 20%;
+    background-color:rgb(106, 173, 5);
+}
+#resp1{
+    width: 50%;
+    background-color:rgb(106, 173, 5);
+}
+#divider{
+    height: 150px;
+    width: 1px;
+    background-color: rgb(218, 215, 215);
+}
+#response{
+    margin-top: 50px;
+}
+#response i{
+color:rgb(6, 167, 6)
+}
+#resbox{
+    width: 500px;
+    justify-content: space-between;
+}
+#thumbsup{
+color:rgb(2, 173, 2) ;
+}
+.thumbd{
+    color:red;
+}
+#morerev{
+    border:1px solid rgb(219, 219, 219);
+    border-radius: 5px;
+    width: 150px;
+    padding: 5px 10px 5px 10px ;
+    margin:auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#morerev>a{
+    text-decoration: none;
 }
 
 /* --------------------------------get in touch with us------------------------------------------------ */
@@ -49,7 +163,7 @@
 .content>div{
     margin-left: auto;margin-right: auto;
     /* border: 1px solid black; */
-    width: 25%;
+    width: 30%;
     height: 100%;
     padding: 10px;
     box-sizing: border-box;
@@ -123,7 +237,7 @@ font-size: 18px;
     font-weight: 600;
 }
 #messagebtns>button{
-padding: 5px 20px 5px 20px;
+padding: 5px 10px 5px 10px;
 font-size: 20px;
 border-radius: 5px;
 margin:auto;
