@@ -1,16 +1,21 @@
 #main{
     height: 1200px;
-    width: 70%;
-    
+    width: 100%;
     display: flex;
     margin: auto;
-    font-family: Arial, Helvetica, sans-serif;
     background-color: #ffffff;
+    justify-content: space-between;
+    padding:5%;
+    box-sizing: border-box;
 }
-#a{
-    height: 1200px;
-    width: 260px;
-    /* border: 1px solid black; */
+#a{ 
+    width: 20%;
+}
+#b{
+    
+    width: 70%;
+   
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 #main>.product .products{
     gap: 30px;
@@ -145,22 +150,8 @@ display: none;
 color: beige;
 font-family: Arial, Helvetica, sans-serif;
                             }                             
-#b{
-    height: 1200px;
-    width: 100%;
-    /* border: 1px solid black; */
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-}
-p{
-    font-size: 16px;
-font-family: Arial;
-}
-h1{
-    font-family: Arial, Helvetica, sans-serif;
-    }
-h2{
-font-family: Arial, Helvetica, sans-serif;
-}    
+
+
 .i{
 margin-bottom: 30px;
 margin-top: 30px;

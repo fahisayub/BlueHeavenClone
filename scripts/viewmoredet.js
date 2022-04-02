@@ -1,120 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap'); */
-       
-       
-       #container {
-           display: grid;
-           grid-template-columns: repeat(2, 1fr);
-           grid-template-rows:auto;
-           gap: 15px;margin-left: 200px;
-           margin-right:15px;
-        
-       }
-
-       #container>div {
-           border: 1px solid rgb(216, 206, 206);
-           padding: 10px;
-           text-align: center;
-           height:320px;
-           
-       }
-
-       #pri {
-           /* display: flex; */
-           justify-content: center;
-           
-       }
-
-       img {
-           height: 50%;
-           width: 50%;
-           border: 1px solid rgb(216, 206, 206); 
-           height:190px;           
-       }
-
-       h3{
-           margin: -3px;
-           cursor: pointer;
-       }
-
-       h3:hover{
-           text-decoration: underline;
-       }
-       button{
-           border: none;
-           padding: 10px 25px 10px 25px;
-           color: white;
-           border-radius: 5px;
-           font-weight: bold;
-           margin-top: 0px;
-       }
-
-      button:hover{
-           filter: brightness(70%);
-           cursor: pointer;
-       }
-
-       #blue{
-           color: rgb(96, 96, 231);
-           margin-top:20px;
-           margin-bottom:10px;
-           font-size:12px;
-           margin-left:5px;
-           
-       }
-
-       #blue:hover{
-           text-decoration: underline;
-       }
-       #blast{
-           display:flex ;
-           margin-right: 20px;
-           margin-left: 200px;
-           background-color: rgb(239, 245, 245);
-         
-       }
-       #blast>div{
-           width:100%;
-           gap:-20px;
-           border:1mm solid rgb(226, 200, 200)
-
-       }
-       #tag{
-text-decoration: underline;
-margin-bottom: 10px;
-margin-left:5px;
-
-       }
-       #tag:hover{
-           color:solid red;
-        
-       }
-       #img{
-           width:100%
-       }
-   </style>
-</head>
-<body>
-    <h2 style="color:#2e3192;;font-size:24px;font-family:arial;margin-left:200px;margin-right:20px">Lipstick</h2>
-    <p style="margin-left:200px;margin-right:15px;;">Providing you the best range of Baked Brick Lipstick, Cerise Pink Lipstick, Coral Red Lipstick, Desert Rose Lipstick, Eternal Red Lipstick and Muddy Pink Lipstick with effective & timely delivery.</p>
-    <div id="blast" >
-        
-        
-    </div>
-    
-    <div id="container"></div>
-
-</body>
-</html>
-<script>
-     var xtra=[
+var xtra=[
    
     {
         image_url:'https://4.imimg.com/data4/QI/AY/GLADMIN-3792183/2-250x250.jpg' ,
@@ -307,12 +191,15 @@ margin-left:5px;
 var img = document.createElement("img")
 img.src = elem.image_url
 img.setAttribute("id", "img")
+img.setAttribute('class','vdimg')
 
 var name = document.createElement("h3")
 name.setAttribute("id", "blue")
+name.setAttribute('class','vdh3')
 name.innerText = elem.productName
 
 var tag=document.createElement("h3")
+tag.setAttribute('class','vdh3')
 tag.setAttribute("id", "tag")
 tag.innerText="Ask Price"
 tag.style.fontSize="12px";
@@ -330,9 +217,11 @@ blast.append(can)
         var box = document.createElement("div")
 
         var img = document.createElement("img")
+        img.setAttribute('class','vdimg')
         img.src = elem.image_url
 
         var name = document.createElement("h3")
+        name.setAttribute('class','vdh3')
         name.setAttribute("id", "blue")
         name.innerText = elem.productName
 
@@ -342,10 +231,10 @@ blast.append(can)
         p.style.size="20px"
 
         var btn = document.createElement("button")
+        btn.setAttribute('class','vdbtn')
         btn.innerText= 'Ask for Detail'
         btn.style.backgroundColor = "teal"
 
         box.append(name,img,p, btn)
         container.append(box)
     })
-</script>

@@ -78,6 +78,10 @@
     padding:10px;
    
 }
+.cang{
+    text-decoration: none;
+    color: white;
+}
 body{
     background-color: #e8e6e6;
 }
