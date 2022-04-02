@@ -1,0 +1,78 @@
+.probox {
+    width: 75%;
+    height: 500px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+h1{
+    margin-left: 150px;
+}
+
+.blue {
+    color: blue;
+    width: 20%;
+}
+
+.blue:hover{
+    color: brown;
+    cursor: pointer;
+}
+
+.p {
+    font-size: 18px;
+    color: gray;
+}
+
+.i {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.img {
+    border: 1px solid rgb(218, 218, 218);
+    height: 80%;
+}
+
+img:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+}
+
+img+p:hover {
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+.vm {
+    color: blue;
+    border: 0ch;
+    cursor: pointer;
+    background-color: white;
+}
+
+.more {
+    padding: 10px 20px 10px 20px;
+    border: 1px solid blue;
+    color: blue;
+    border-radius: 3px;
+    background-color: white;
+    display: inline;
+    float: right;
+    margin-right: 20px;
+}
+
+.more:hover {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+#big{
+    width: 100%;
+}
