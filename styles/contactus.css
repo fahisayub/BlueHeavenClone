@@ -1,0 +1,32 @@
+#maincu{
+    display:flex;
+    /* border:1mm solid red; */
+    gap:50px;
+}
+
+#primarycu{
+    border:1mm solid aliceblue;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   
+}
+/* #primarycu:hover{
+    text-decoration: underline;
+    color: blue;
+} */
+
+#countcu{
+    width:50%;
+}
+#sendbtncu{
+padding: 15px 20px 15px 20px;
+font-weight: bold;
+background-color: rgb(66, 190, 149);
+color: white;
+border: none;
+margin: 25px;
+float: right;
+border-radius: 4px;
+}
+#messagebtnscu{
+float: right;
+}
