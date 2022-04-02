@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap'); */
+       
+       
+       #container {
+           display: grid;
+           grid-template-columns: repeat(2, 1fr);
+           grid-template-rows:auto;
+           gap: 15px;margin-left: 200px;
+           margin-right:15px;
+        
+       }
+
+       #container>div {
+           border: 1px solid rgb(216, 206, 206);
+           padding: 10px;
+           text-align: center;
+           height:320px;
+           
+       }
+
+       #pri {
+           /* display: flex; */
+           justify-content: center;
+           
+       }
+
+       img {
+           height: 50%;
+           width: 50%;
+           border: 1px solid rgb(216, 206, 206); 
+           height:190px;           
+       }
+
+       h3{
+           margin: -3px;
+           cursor: pointer;
+       }
+
+       h3:hover{
+           text-decoration: underline;
+       }
+       button{
+           border: none;
+           padding: 10px 25px 10px 25px;
+           color: white;
+           border-radius: 5px;
+           font-weight: bold;
+           margin-top: 0px;
+       }
+
+      button:hover{
+           filter: brightness(70%);
+           cursor: pointer;
+       }
+
+       #blue{
+           color: rgb(96, 96, 231);
+           margin-top:20px;
+           margin-bottom:10px;
+           font-size:12px;
+           margin-left:5px;
+           
+       }
+
+       #blue:hover{
+           text-decoration: underline;
+       }
+       #blast{
+           display:flex ;
+           margin-right: 20px;
+           margin-left: 200px;
+           background-color: rgb(239, 245, 245);
+         
+       }
+       #blast>div{
+           width:100%;
+           gap:-20px;
+           border:1mm solid rgb(226, 200, 200)
+
+       }
+       #tag{
+text-decoration: underline;
+margin-bottom: 10px;
+margin-left:5px;
+
+       }
+       #tag:hover{
+           color:solid red;
+        
+       }
+       #img{
+           width:100%
+       }
+   </style>
+</head>
+<body>
+    <h2 style="color:#2e3192;;font-size:24px;font-family:arial;margin-left:200px;margin-right:20px">Lipstick</h2>
+    <p style="margin-left:200px;margin-right:15px;;">Providing you the best range of Baked Brick Lipstick, Cerise Pink Lipstick, Coral Red Lipstick, Desert Rose Lipstick, Eternal Red Lipstick and Muddy Pink Lipstick with effective & timely delivery.</p>
+    <div id="blast" >
+        
+        
+    </div>
+    
+    <div id="container"></div>
+
+</body>
+</html>
+<script>
+     var xtra=[
+   
+    {
+        image_url:'https://4.imimg.com/data4/QI/AY/GLADMIN-3792183/2-250x250.jpg' ,
+        productName :'Coral Red Lipstick' ,
+        category:'LipCare',
+        price:60 ,
+        brand:'Blue Heaven Cosmetics' ,
+        location:'Kirti Nagar, New Delhi, Delhi' , 
+     }
+     ,{
+        image_url:'https://4.imimg.com/data4/KD/IX/GLADMIN-3792183/4-250x250.jpg' ,
+        productName :'Pretty Purple Lipstick' ,
+        category:'LipCare',
+        price:40 ,
+        brand:'Blue Heaven Cosmetics' ,
+        location:'Kirti Nagar, New Delhi, Delhi' ,
+    },
+    {
+        image_url:'https://4.imimg.com/data4/QI/AY/GLADMIN-3792183/2-250x250.jpg' ,
+        productName :'Coral Red Lipstick' ,
+        category:'LipCare',
+        price:60 ,
+        brand:'Blue Heaven Cosmetics' ,
+        location:'Kirti Nagar, New Delhi, Delhi' , 
+     }
+     ,{
+        image_url:'https://4.imimg.com/data4/KD/IX/GLADMIN-3792183/4-250x250.jpg' ,
+        productName :'Pretty Purple Lipstick' ,
+        category:'LipCare',
+        price:40 ,
+        brand:'Blue Heaven Cosmetics' ,
+        location:'Kirti Nagar, New Delhi, Delhi' ,
+    },
+    {
+        image_url:'https://4.imimg.com/data4/QI/AY/GLADMIN-3792183/2-250x250.jpg' ,
+        productName :'Coral Red Lipstick' ,
+        category:'LipCare',
+        price:60 ,
+        brand:'Blue Heaven Cosmetics' ,
+        location:'Kirti Nagar, New Delhi, Delhi' , 
+     }
+     ,{
+        image_url:'https://4.imimg.com/data4/KD/IX/GLADMIN-3792183/4-250x250.jpg' ,
+        productName :'Pretty Purple Lipstick' ,
+        category:'LipCare',
+        price:40 ,
+        brand:'Blue Heaven Cosmetics' ,
+        location:'Kirti Nagar, New Delhi, Delhi' ,
+    },
+    {
+        image_url:'https://4.imimg.com/data4/QI/AY/GLADMIN-3792183/2-250x250.jpg' ,
+        productName :'Coral Red Lipstick' ,
+        category:'LipCare',
+        price:60 ,
+        brand:'Blue Heaven Cosmetics' ,
+        location:'Kirti Nagar, New Delhi, Delhi' , 
+     }
+     ,{
+        image_url:'https://4.imimg.com/data4/KD/IX/GLADMIN-3792183/4-250x250.jpg' ,
+        productName :'Pretty Purple Lipstick' ,
+        category:'LipCare',
+        price:40 ,
+        brand:'Blue Heaven Cosmetics' ,
+        location:'Kirti Nagar, New Delhi, Delhi' ,
+    }
+
+
+     ];
+     var prod=[
+     {
+        image_url:'https://3.imimg.com/data3/WJ/EO/MY-3792183/01-500x500.jpg' ,
+        productName :'Sindoor' ,
+        category:'Traditional Items',
+        price:100 ,
+        brand:'Blue Heaven Cosmetics' ,
+        location:'Kirti Nagar, New Delhi, Delhi' ,
+    }
+    ,
+    {
+        image_url:'https://3.imimg.com/data3/QC/FL/MY-3792183/fairness-scrub-500x500.jpg' ,
+        productName :'Fairness Scrub' ,
+        category:'Makeup',
+        price:199 ,
+        brand:'Blue Heaven Cosmetics' ,
+        location:'Kirti Nagar, New Delhi, Delhi' ,
+    }
+    ,
+    {
+        image_url:'https://3.imimg.com/data3/NL/QG/MY-3792183/fruit-bleach-500x500.jpg' ,
+        productName :'Fruit Bleach' ,
+        category:'Bleach Cream',
+        price:259 ,
+        brand:'Blue Heaven Cosmetics' ,
+        location:'Kirti Nagar, New Delhi, Delhi' ,
+    },
+    {
+        image_url:'https://3.imimg.com/data3/US/UJ/MY-3792183/lip-balm-500x500.jpg' ,
+        productName :'Lip Balm' ,
+        category:'LipCare',
+        price:58 ,
+        brand:'Blue Heaven Cosmetics' ,
+        location:'Kirti Nagar, New Delhi, Delhi' ,
+    }
+    ,{
+        image_url:'https://3.imimg.com/data3/EJ/OU/MY-3792183/lip-gaurd-500x500.jpg' ,
+        productName :'Lip Gaurd' ,
+        category:'LipCare',
+        price:88 ,
+        brand:'Blue Heaven Cosmetics' ,
+        location:'Kirti Nagar, New Delhi, Delhi' ,
+    }
+    ,{
+        image_url:'https://4.imimg.com/data4/QI/AY/GLADMIN-3792183/2-250x250.jpg' ,
+        productName :'Coral Red Lipstick' ,
+        category:'LipCare',
+        price:60 ,
+        brand:'Blue Heaven Cosmetics' ,
+        location:'Kirti Nagar, New Delhi, Delhi' ,
+    }
+    ,{
+        image_url:'https://4.imimg.com/data4/KD/IX/GLADMIN-3792183/4-250x250.jpg' ,
+        productName :'Pretty Purple Lipstick' ,
+        category:'LipCare',
+        price:40 ,
+        brand:'Blue Heaven Cosmetics' ,
+        location:'Kirti Nagar, New Delhi, Delhi' ,
+    }
+    ,{
+        image_url:'https://3.imimg.com/data3/ML/RO/MY-3792183/mascara-500x500.jpg' ,
+        productName :'Mascara' ,
+        category:'Eyes Products',
+        price:115 ,
+        brand:'Blue Heaven Cosmetics' ,
+        location:'Kirti Nagar, New Delhi, Delhi' ,
+    }
+    ,{
+        image_url:'https://3.imimg.com/data3/FX/IN/MY-3792183/eye-shadow-500x500.jpg' ,
+        productName :'Eye Shadow' ,
+        category:'Eyes Products',
+        price:237 ,
+        brand:'Blue Heaven Cosmetics' ,
+        location:'Kirti Nagar, New Delhi, Delhi' ,
+    }
+    ,{
+        image_url:'https://3.imimg.com/data3/GE/KN/MY-3792183/gold-bleach-500x500.jpg' ,
+        productName :'Gold Bleach' ,
+        category:'Bleach Cream',
+        price:338 ,
+        brand:'Blue Heaven Cosmetics' ,
+        location:'Kirti Nagar, New Delhi, Delhi' ,
+    }
+    ,{
+        image_url:'https://3.imimg.com/data3/UP/UB/MY-3792183/rose-water-mask-250x250.jpg' ,
+        productName :'Rose Water -Mask' ,
+        category:'Rose Water',
+        price:220 ,
+        brand:'Blue Heaven Cosmetics' ,
+        location:'Kirti Nagar, New Delhi, Delhi' ,
+    }
+    ,{
+        image_url:'https://3.imimg.com/data3/BK/MD/MY-3792183/01-250x250.jpg' ,
+        productName :'Nail Enamel' ,
+        category:'Nails Products',
+        price:405 ,
+        brand:'Blue Heaven Cosmetics' ,
+        location:'Kirti Nagar, New Delhi, Delhi' ,
+    }
+    ,{
+        image_url:'https://4.imimg.com/data4/AP/MT/GLADMIN-3792183/1-250x250.jpg' ,
+        productName :'Diamond Facial Kit' ,
+        category:'Facial Kit',
+        price:250 ,
+        brand:'Blue Heaven Cosmetics' ,
+        location:'Kirti Nagar, New Delhi, Delhi' ,
+    }
+    ,{
+        image_url:'https://3.imimg.com/data3/BH/LB/MY-3792183/massage-cream-250x250.jpg' ,
+        productName :'Massage Cream' ,
+        categary:'Creams',
+        price:125 ,
+        brand:'Blue Heaven Cosmetics' ,
+        location:'Kirti Nagar, New Delhi, Delhi' ,
+    }
+    ,];
+    var blast=document.querySelector("#blast")
+    xtra.map(function(elem){
+        var can=document.createElement("div")
+        
+
+var img = document.createElement("img")
+img.src = elem.image_url
+img.setAttribute("id", "img")
+
+var name = document.createElement("h3")
+name.setAttribute("id", "blue")
+name.innerText = elem.productName
+
+var tag=document.createElement("h3")
+tag.setAttribute("id", "tag")
+tag.innerText="Ask Price"
+tag.style.fontSize="12px";
+tag.style.color="blue"
+// tag.style.text.decoration="underline"
+
+can.append(img,name,tag)
+blast.append(can)
+
+       
+})
+
+    var container = document.querySelector("#container")
+    prod.map(function (elem) {
+        var box = document.createElement("div")
+
+        var img = document.createElement("img")
+        img.src = elem.image_url
+
+        var name = document.createElement("h3")
+        name.setAttribute("id", "blue")
+        name.innerText = elem.productName
+
+        var p=document.createElement("p")
+        p.innerText="Get Latest Price";
+        p.style.color="blue";
+        p.style.size="20px"
+
+        var btn = document.createElement("button")
+        btn.innerText= 'Ask for Detail'
+        btn.style.backgroundColor = "teal"
+
+        box.append(name,img,p, btn)
+        container.append(box)
+    })
+</script>
