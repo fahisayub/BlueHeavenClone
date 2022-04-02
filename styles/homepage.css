@@ -1,7 +1,8 @@
 #scrolling{
     display: flex;
     margin:auto;
-    margin-top: 50px;
+    margin-top: 60px;
+    
 }
 #showcase{
     height: 250px;
@@ -11,7 +12,6 @@
     overflow:scroll ;
     overflow-y: hidden;
     white-space: nowrap;
-    
 }
 #showcase::-webkit-scrollbar{
     display: none;
@@ -69,4 +69,144 @@ position: relative;
 }
 #name:hover{
 height: 50%;
+}
+
+/* ..................About us ................... */
+hr.rounded {
+    border-top: 3px solid blue;
+    border-radius: 5px;
+    width: 5%;
+    margin-top: -12px;
+}
+
+#about {
+    text-align: center;
+}
+
+.aboutgrey {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 18px;
+    color: rgb(92, 91, 91);
+}
+
+#readme {
+    color: blue;
+    width: 7%;
+    margin: auto;
+}
+
+#readme:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#boxes {
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 40px;
+    margin: auto;
+    margin-top: 50px;
+    justify-content: space-around;
+}
+
+#boxes>div {
+    display: flex;
+}
+
+.boxicon {
+    height: 70px;
+    width: 70px;
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.arrange{
+    font-size: 30px;
+    width: 100%;
+    color: blue;
+    margin-top: 19px;
+}
+
+.cont>p{
+margin: 10px 10px 5px 20px;
+width: 100%;
+}
+
+.blk{
+    color: black;
+}
+
+#abt{
+    text-align: center;
+    margin-top: 100px;
+}
+
+#Products{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,auto);
+    gap: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+#Products>div{
+    /* width: 80%; */
+    border: 1px solid rgb(223, 221, 221);
+}
+
+#Products>div:hover{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.pimg{
+    width: 250px;
+    height: 300px;
+    border: 1px solid rgb(223, 221, 221);
+    margin-top: 10px;
+}
+
+.pimg+div{
+    margin-bottom: 25px;
+}
+
+.pimg+div:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.cate~p{
+    line-height: 20%;
+}
+
+.btn{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.rangebtn{
+    border: 1px solid green;
+    padding: 15px 20px 15px 20px;
+    color: white;
+}
+
+.rangebtn a{
+    color: green;
+    text-decoration: none;
+}
+
+.rangebtn a:hover{
+    color: white;
+}
+
+.rangebtn:hover{
+    background-color:green;
+    cursor: pointer;
 }
