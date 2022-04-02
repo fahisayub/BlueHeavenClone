@@ -9,7 +9,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap');
 
-        h1{
+        .h1{
             font-family: 'Roboto', sans-serif;
         }
 
@@ -32,21 +32,21 @@
             justify-content: center;
         }
 
-        img {
+        #fi {
             height: 50%;
             width: 80%;
             border: 1px solid rgb(216, 206, 206);            
         }
 
-        h3{
+        .h3{
             margin: -3px;
             cursor: pointer;
         }
 
-        h3:hover{
+        .h3:hover{
             text-decoration: underline;
         }
-        button{
+        .button{
             border: none;
             padding: 10px 25px 10px 25px;
             color: white;
@@ -55,7 +55,7 @@
             margin-top: 20px;
         }
 
-        button:hover{
+        .button:hover{
             filter: brightness(95%);
             cursor: pointer;
         }
@@ -71,7 +71,7 @@
 </head>
 
 <body>
-    <h1>Featured Recommendations</h1>
+    <h1 class="h1">Featured Recommendations</h1>
     <div id="container"></div>
 </body>
 
@@ -118,9 +118,11 @@
         var box = document.createElement("div")
 
         var img = document.createElement("img")
+        img.setAttribute("id","fi")
         img.src = elem.image_url
 
         var name = document.createElement("h3")
+        name.setAttribute("class","h3")
         name.setAttribute("id", "blue")
         name.innerText = elem.productName
 
@@ -136,6 +138,7 @@
         div.append(price, p)
 
         var brand = document.createElement("h3")
+        brand.setAttribute("class","h3")
         brand.innerText = elem.brand
         // brand.style.
 
@@ -146,6 +149,7 @@
         // call.innerText= elem.call
 
         var btn = document.createElement("button")
+        btn.setAttribute("class","button")
         btn.innerText= 'Contact Supplier'
         btn.style.backgroundColor = "teal"
 
