@@ -10,9 +10,9 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap');
 
-        h1 {
+        /* h1 {
             font-family: 'Roboto', sans-serif;
-        }
+        } */
 
         hr.rounded {
             border-top: 3px solid blue;
@@ -25,7 +25,7 @@
             text-align: center;
         }
 
-        p {
+        .aboutgrey {
             width: 90%;
             margin: auto;
             margin-top: 20px;
@@ -33,13 +33,13 @@
             color: rgb(92, 91, 91);
         }
 
-        h4 {
+        #readme {
             color: blue;
             width: 7%;
             margin: auto;
         }
 
-        h4:hover {
+        #readme:hover {
             text-decoration: underline;
             cursor: pointer;
         }
@@ -68,7 +68,7 @@
             border-radius: 50%;
         }
 
-        span{
+        .arrange{
             font-size: 30px;
             width: 100%;
             color: blue;
@@ -108,23 +108,23 @@
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         }
 
-        img{
+        .pimg{
             width: 250px;
             height: 300px;
             border: 1px solid rgb(223, 221, 221);
             margin-top: 10px;
         }
 
-        img+div{
+        .pimg+div{
             margin-bottom: 25px;
         }
 
-        img+div:hover{
+        .pimg+div:hover{
             text-decoration: underline;
             cursor: pointer;
         }
 
-        h3~p{
+        .cate~p{
             line-height: 20%;
         }
 
@@ -133,22 +133,22 @@
             margin-top: 40px;
         }
 
-        button{
+        .rangebtn{
             border: 1px solid green;
             padding: 15px 20px 15px 20px;
             color: white;
         }
 
-        a{
+        .rangebtn a{
             color: green;
             text-decoration: none;
         }
 
-        a:hover{
+        .rangebtn a:hover{
             color: white;
         }
 
-        button:hover{
+        .rangebtn:hover{
             background-color:green;
             cursor: pointer;
         }
@@ -159,56 +159,56 @@
     <div id="about">
         <h1>About Us</h1>
         <hr class="rounded">
-        <p>Blue Heaven Cosmetics was started in 1974 by two young brothers, company MD's Mr.Charanjit Singh and Mr.
+        <p class="aboutgrey">Blue Heaven Cosmetics was started in 1974 by two young brothers, company MD's Mr.Charanjit Singh and Mr.
             Gurnam Singh with big dreams and ambitions.</p>
-        <p>By virtue of their determination and commitment Blue Heaven Cosmetics has been able to experience such an
+        <p class="aboutgrey">By virtue of their determination and commitment Blue Heaven Cosmetics has been able to experience such an
             eventful journey revolutionizing the Indian decorative cosmetics industry.</p>
     </div>
     <h4 id="readme">+ Read More</h4>
 
         <div id="boxes">
         <div>
-            <div class="boxicon"><span> <i class="fa-solid fa-hand-holding-dollar"></i></span></div>
+            <div class="boxicon"><span class="arrange"> <i class="fa-solid fa-hand-holding-dollar"></i></span></div>
             <div class="cont">
-                <p>Nature of Business</p>
-                <p class="blk">Exporter and Manufacturer</p>
+                <p class="aboutgrey">Nature of Business</p>
+                <p class="blk aboutgrey">Exporter and Manufacturer</p>
             </div>    
         </div>
         <div>
-            <div class="boxicon"><span><i class="fa-solid fa-city"></i></span></div>
+            <div class="boxicon"><span class="arrange"><i class="fa-solid fa-city"></i></span></div>
             <div class="cont">
-                <p>Year of Establishment</p>
-                <p class="blk">1974</p>
+                <p class="aboutgrey">Year of Establishment</p>
+                <p class="blk aboutgrey">1974</p>
             </div>   
         </div>
  
         <div>
-            <div class="boxicon"><span><i class="fa-solid fa-scale-balanced"></i></span></div>
+            <div class="boxicon"><span class="arrange"><i class="fa-solid fa-scale-balanced"></i></span></div>
             <div class="cont">
-                <p>Legal Status of Firm</p>
-                <p class="blk">Limited Company (Ltd./Pvt.Ltd.)</p>
+                <p class="aboutgrey">Legal Status of Firm</p>
+                <p class="blk aboutgrey">Limited Company (Ltd./Pvt.Ltd.)</p>
             </div>   
         </div>
 
         <div>
-            <div class="boxicon"><span><i class="fa-solid fa-chart-column"></i></span></div>
+            <div class="boxicon"><span class="arrange"><i class="fa-solid fa-chart-column"></i></span></div>
             <div class="cont">
-                <p>Annual Turnover</p>
-                <p class="blk">Rs. 50 - 100Crore</p>
+                <p class="aboutgrey">Annual Turnover</p>
+                <p class="blk aboutgrey">Rs. 50 - 100Crore</p>
             </div>   
         </div>
         <div>
-            <div class="boxicon"> <span><i class="fa-solid fa-globe"></i></span></div>
+            <div class="boxicon"> <span class="arrange"><i class="fa-solid fa-globe"></i></span></div>
             <div class="cont">
-                <p>Import Export Code (IEC)</p>
-                <p class="blk">05040*****</p>
+                <p class="aboutgrey">Import Export Code (IEC)</p>
+                <p class="blk aboutgrey">05040*****</p>
             </div>   
         </div>
         <div>
-            <div class="boxicon"><span><i class="fa-solid fa-clipboard"></i></span></div>
+            <div class="boxicon"><span class="arrange"><i class="fa-solid fa-clipboard"></i></span></div>
             <div class="cont">
-                <p>GST Number</p>
-                <p class="blk">07AACCB1155C1ZB</p>
+                <p class="aboutgrey">GST Number</p>
+                <p class="blk aboutgrey">07AACCB1155C1ZB</p>
             </div>   
         </div>
     </div>
@@ -219,7 +219,7 @@
 
         <div id="Products"></div>
 
-        <div class="btn"><button><a href="veiwData.html">View Complete Range</a></button></div>
+        <div class="btn"><button class="rangebtn"><a href="veiwData.html">View Complete Range</a></button></div>
  
 </body>
 </html>
@@ -318,6 +318,7 @@
         var pdiv = document.createElement("div")
 
         var img = document.createElement("img")
+        img.setAttribute('class','pimg');
         img.src = elem.image_url
 
         var text = document.createElement("div")
@@ -325,6 +326,7 @@
         // text.style.textDecoration = "underline"
         // text.style.cursor = "pointer"
         var category = document.createElement("h3")
+        category.setAttribute('class','cate')
         category.innerText=elem.category
         category.style.color="blue"
         category.addEventListener("click", veiwData)

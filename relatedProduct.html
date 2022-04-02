@@ -9,17 +9,17 @@
     <style>
          @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap');
         
-        h1{
+        /* h1{
             font-family: 'Roboto', sans-serif;
-        }
-        #container {
+        } */
+        #rpcontainer {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(1, 500px);
             gap: 15px;
         }
 
-        #container>div {
+        #rpcontainer>div {
             border: 1px solid rgb(216, 206, 206);
             padding: 10px;
             text-align: center;
@@ -31,21 +31,21 @@
             justify-content: center;
         }
 
-        img {
+        .rpimg {
             height: 50%;
             width: 80%;
             border: 1px solid rgb(216, 206, 206);            
         }
 
-        h3{
+        .rpname{
             margin: -3px;
             cursor: pointer;
         }
 
-        h3:hover{
+        .rpname:hover{
             text-decoration: underline;
         }
-        button{
+        .csbtn{
             border: none;
             padding: 10px 25px 10px 25px;
             color: white;
@@ -54,16 +54,16 @@
             margin-top: 20px;
         }
 
-        button:hover{
+        .csbtn:hover{
             filter: brightness(95%);
             cursor: pointer;
         }
 
-        #blue{
+        #rpblue{
             color: blue;
         }
 
-        #blue:hover{
+        #rpblue:hover{
             text-decoration: underline;
         }
     </style>
@@ -71,13 +71,13 @@
 
 <body>
     <h1>Related Product From top Suppliers</h1>
-    <div id="container"></div>
+    <div id="rpcontainer"></div>
 </body>
 
 </html>
 
 <script>
-    var container = document.querySelector("#container")
+    var rpcontainer = document.querySelector("#rpcontainer")
     var readytoShip = [
         {
             image_url: "https://3.imimg.com/data3/BX/CS/MY-3792183/foundation-250x250.jpg",
@@ -117,10 +117,12 @@
         var box = document.createElement("div")
 
         var img = document.createElement("img")
+        img.setAttribute('class','rpimg')
         img.src = elem.image_url
 
         var name = document.createElement("h3")
-        name.setAttribute("id", "blue")
+        name.setAttribute("id", "rpblue")
+        name.setAttribute('class','rpname')
         name.innerText = elem.productName
 
         var div = document.createElement("div")
@@ -135,6 +137,7 @@
         div.append(price, p)
 
         var brand = document.createElement("h3")
+        brand.setAttribute('class','rpname')
         brand.innerText = elem.brand
         // brand.style.
 
@@ -142,13 +145,15 @@
         loco.innerText= elem.location
 
         var call = document.createElement("h3")
+        call.setAttribute('class','rpname')
         call.innerText= elem.call
 
         var btn = document.createElement("button")
+        btn.setAttribute('class','csbtn')
         btn.innerText= 'Contact Supplier'
         btn.style.backgroundColor = "teal"
 
         box.append(img, name, div, brand,loco,call, btn)
-        container.append(box)
-    }) 
+        rpcontainer.append(box)
+    }); 
 </script>
