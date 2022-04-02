@@ -13,40 +13,40 @@
             font-family: 'Roboto', sans-serif;
         }
 
-        #container {
+        #Fcontainer {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(1, 500px);
             gap: 15px;
         }
 
-        #container>div {
+        #Fcontainer>div {
             border: 1px solid rgb(216, 206, 206);
             padding: 10px;
             text-align: center;
             box-sizing: border-box;
         }
 
-        #pri {
+        #fdpri {
             display: flex;
             justify-content: center;
         }
 
-        img {
+        .fdimg {
             height: 50%;
             width: 80%;
             border: 1px solid rgb(216, 206, 206);            
         }
 
-        h3{
+        .fdh{
             margin: -3px;
             cursor: pointer;
         }
 
-        h3:hover{
+        .fdh:hover{
             text-decoration: underline;
         }
-        button{
+        .fdbtn{
             border: none;
             padding: 10px 25px 10px 25px;
             color: white;
@@ -55,16 +55,16 @@
             margin-top: 20px;
         }
 
-        button:hover{
+        .fdbtn:hover{
             filter: brightness(95%);
             cursor: pointer;
         }
 
-        #blue{
+        #fdblue{
             color: blue;
         }
 
-        #blue:hover{
+        #fdblue:hover{
             text-decoration: underline;
         }
     </style>
@@ -72,13 +72,13 @@
 
 <body>
     <h1>Featured Recommendations</h1>
-    <div id="container"></div>
+    <div id="Fcontainer"></div>
 </body>
 
 </html>
 
 <script>
-    var container = document.querySelector("#container")
+    var Fcontainer = document.querySelector("#Fcontainer")
     var readytoShip = [
         {
             image_url: "https://5.imimg.com/data5/SELLER/Default/2021/12/KG/WS/SD/742923/unique-bottle-mop-250x250.png",
@@ -118,14 +118,16 @@
         var box = document.createElement("div")
 
         var img = document.createElement("img")
+        img.setAttribute('class','fdimg')
         img.src = elem.image_url
 
         var name = document.createElement("h3")
-        name.setAttribute("id", "blue")
+        name.setAttribute("id", "fdblue")
+        name.setAttribute('class','fdh')
         name.innerText = elem.productName
 
         var div = document.createElement("div")
-        div.setAttribute("id", "pri")
+        div.setAttribute("id", "fdpri")
 
         var price = document.createElement("h4")
         price.innerText = elem.price
@@ -136,6 +138,7 @@
         div.append(price, p)
 
         var brand = document.createElement("h3")
+        brand.setAttribute('class','fdh')
         brand.innerText = elem.brand
         // brand.style.
 
@@ -146,10 +149,11 @@
         // call.innerText= elem.call
 
         var btn = document.createElement("button")
+        btn.setAttribute('class','fdbtn')
         btn.innerText= 'Contact Supplier'
         btn.style.backgroundColor = "teal"
 
         box.append(img, name, div, brand,loco, btn)
-        container.append(box)
+        Fcontainer.append(box)
     }) 
 </script>
