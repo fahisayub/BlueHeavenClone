@@ -1,0 +1,56 @@
+div{
+    height: 500px;
+    width: 500px;
+    border: 1px solid;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#num,#piece{
+    border-radius: 1px;
+    height: 30px;
+    width: 100px;
+    font-size: 20px;
+    color: black;
+    gap: 0px;
+    border: 1px solid teal;
+    
+}
+#select_value{
+    border-radius: 7px;
+    height: 35px;
+    width: 170px;
+    border: 1px solid turquoise;
+}
+.use{
+    height: 100px;
+    width: 400px;
+    border: px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+
+}
+.use>div{
+    height: 40px;
+    width: 110px;
+    border: 1px solid black;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+button{
+    height: 40px;
+    width: 200px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(41, 193, 193);
+}
+button:hover{
+    background-color: #00a699;
+}
