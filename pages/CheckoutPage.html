@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .main{
+            width: 40%;
+            margin: auto;
+            padding: 15px;
+            text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+            rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+            rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+
+        form>input{
+            height: 30px;
+            width: 300px;
+            border-radius: 2px;
+            border: 1px solid rgb(192, 192, 192);
+            margin: 15px;
+        }
+
+        #btnc{
+            height: 50px;
+            background-color: rgb(44, 160, 160);
+            color: white;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        #order{
+            height: 100px;
+            width: 400px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 7px;
+            margin: auto;
+            display: flex;
+        }
+
+        img{
+            height: 97px;
+            width: 100px;
+            border-radius: 7px;
+            border: 1px solid rgb(219, 216, 216);
+        }
+
+        #box{
+            margin-left: 15px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="main">
+    <h1 class="H">Make Payment/Checkout</h1>
+
+    <div id="order"></div>
+
+    <form>
+        <input type="number" placeholder="enter 16 digit card number" id="cardNo"><br>
+        <input type="password" placeholder="enter 3 digit cvv" id="cvv"><br>
+        <input type="date" id="date"><br>
+        <input type="password" placeholder="enter 6 digit otp" id="otp"><br>
+        <input type="submit" id="btnc">
+    </form>
+</div>
+</body>
+</html>
+
+<script>
+
+    var Checkout = JSON.parse(localStorage.getItem("shipping"))
+
+    Checkout.map(function(elem){
+         console.log(elem)
+         var image = document.createElement("img")
+         image.src= elem.image_url
+
+         var box = document.createElement("div")
+         box.setAttribute("id","box")
+
+         var name = document.createElement("h3")
+         name.innerText= elem.productName
+         var price = document.createElement("h3")
+         price.innerText= elem.price
+         
+         box.append(name,price)
+         var div = document.querySelector("#order")
+         div.append(image,box)
+    })
+    
+
+    document.querySelector("form").addEventListener("submit", checkOut)
+
+    function checkOut(){
+        event.preventDefault()
+        
+        var card = document.querySelector("#cardNo").value
+        var cvv = document.querySelector("#cvv").value
+        var date = document.querySelector("#date").value
+        var otp = document.querySelector("#otp").value
+
+        if(card.length == 16 && cvv.length ==3 && otp.length == 6){
+            alert("Successfully!! Placed Order")
+        }else{
+            alert("Try Again!")
+        }
+    }
+</script>

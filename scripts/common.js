@@ -174,6 +174,9 @@ price.setAttribute("class","can3rtp");
 var btn = document.createElement("button")
     btn.innerText= 'Buy Now'
     btn.setAttribute("class","canbtnrtp");
+    btn.addEventListener("click", function(){
+        addToCart(elem)
+    })
 var brand=document.createElement("h5");
 brand.textContent=elem.brand;
 brand.setAttribute("class","can4rtp");
@@ -182,9 +185,14 @@ box.append(image,name,price,btn,brand);
 
 
 document.querySelector("#tankrtp").append(box)
-
-
 });
+shipdata = []
+function addToCart(elem){
+    window.location.href="/pages/CheckoutPage.html"
+    shipdata.push(elem)
+    console.log(elem)
+    localStorage.setItem("shipping",JSON.stringify(shipdata))
+}
 
 //------------------------Related categories--------------------------//
 
