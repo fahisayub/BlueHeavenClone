@@ -153,7 +153,15 @@ rtp.map(function(elem){
   price.setAttribute("class","can3rtp");
   var btn = document.createElement("button")
         btn.innerText= 'Buy Now'
-        btn.setAttribute("class","canbtnrtp");
+
+        btn.setAttribute("class","canbtn");
+        btn.addEventListener("click", function(){
+            addToCart(elem)
+        })
+        
+//=======
+        btn.setAttribute("class","canbtn");
+
   var brand=document.createElement("h5");
   brand.textContent=elem.brand;
   brand.setAttribute("class","can4rtp");
@@ -163,6 +171,13 @@ rtp.map(function(elem){
 
   document.querySelector("#tankrtp").append(box)
 
-
 });
+     //JSON.parse(localStorage.getItem("shipping"))
+    shipdata = []
+    function addToCart(elem){
+        window.location.href="CheckoutPage.html"
+        shipdata.push(elem)
+        console.log(elem)
+        localStorage.setItem("shipping",JSON.stringify(shipdata))
+    }
 </script>
