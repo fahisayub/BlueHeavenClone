@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap');
+
+        /* h1 {
+            font-family: 'Roboto', sans-serif;
+        } */
+
+        hr.rounded {
+            border-top: 3px solid blue;
+            border-radius: 5px;
+            width: 5%;
+            margin-top: -12px;
+        }
+
+        #about {
+            text-align: center;
+        }
+
+        .aboutgrey {
+            width: 90%;
+            margin: auto;
+            margin-top: 20px;
+            font-size: 18px;
+            color: rgb(92, 91, 91);
+        }
+
+        #readme {
+            color: blue;
+            width: 7%;
+            margin: auto;
+        }
+
+        #readme:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        #boxes {
+            display: grid;
+            width: 90%;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, auto);
+            gap: 40px;
+            margin: auto;
+            margin-top: 50px;
+            justify-content: space-around;
+        }
+
+        #boxes>div {
+            display: flex;
+        }
+
+        .boxicon {
+            height: 70px;
+            width: 70px;
+            background-color: rgb(231, 231, 231);
+            display: flex;
+            text-align: center;
+            border-radius: 50%;
+        }
+
+        .arrange{
+            font-size: 30px;
+            width: 100%;
+            color: blue;
+            margin-top: 19px;
+        }
+
+        .cont>p{
+        margin: 10px 10px 5px 20px;
+        width: 100%;
+        }
+
+        .blk{
+            color: black;
+        }
+
+        #abt{
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        #Products{
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,auto);
+            gap: 20px;
+            margin: auto;
+            text-align: center;
+        }
+
+        #Products>div{
+            /* width: 80%; */
+            border: 1px solid rgb(223, 221, 221);
+        }
+
+        #Products>div:hover{
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+
+        .pimg{
+            width: 250px;
+            height: 300px;
+            border: 1px solid rgb(223, 221, 221);
+            margin-top: 10px;
+        }
+
+        .pimg+div{
+            margin-bottom: 25px;
+        }
+
+        .pimg+div:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .cate~p{
+            line-height: 20%;
+        }
+
+        .btn{
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .rangebtn{
+            border: 1px solid green;
+            padding: 15px 20px 15px 20px;
+            color: white;
+        }
+
+        .rangebtn a{
+            color: green;
+            text-decoration: none;
+        }
+
+        .rangebtn a:hover{
+            color: white;
+        }
+
+        .rangebtn:hover{
+            background-color:green;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="about">
+        <h1>About Us</h1>
+        <hr class="rounded">
+        <p class="aboutgrey">Blue Heaven Cosmetics was started in 1974 by two young brothers, company MD's Mr.Charanjit Singh and Mr.
+            Gurnam Singh with big dreams and ambitions.</p>
+        <p class="aboutgrey">By virtue of their determination and commitment Blue Heaven Cosmetics has been able to experience such an
+            eventful journey revolutionizing the Indian decorative cosmetics industry.</p>
+    </div>
+    <h4 id="readme">+ Read More</h4>
+
+        <div id="boxes">
+        <div>
+            <div class="boxicon"><span class="arrange"> <i class="fa-solid fa-hand-holding-dollar"></i></span></div>
+            <div class="cont">
+                <p class="aboutgrey">Nature of Business</p>
+                <p class="blk aboutgrey">Exporter and Manufacturer</p>
+            </div>    
+        </div>
+        <div>
+            <div class="boxicon"><span class="arrange"><i class="fa-solid fa-city"></i></span></div>
+            <div class="cont">
+                <p class="aboutgrey">Year of Establishment</p>
+                <p class="blk aboutgrey">1974</p>
+            </div>   
+        </div>
+ 
+        <div>
+            <div class="boxicon"><span class="arrange"><i class="fa-solid fa-scale-balanced"></i></span></div>
+            <div class="cont">
+                <p class="aboutgrey">Legal Status of Firm</p>
+                <p class="blk aboutgrey">Limited Company (Ltd./Pvt.Ltd.)</p>
+            </div>   
+        </div>
+
+        <div>
+            <div class="boxicon"><span class="arrange"><i class="fa-solid fa-chart-column"></i></span></div>
+            <div class="cont">
+                <p class="aboutgrey">Annual Turnover</p>
+                <p class="blk aboutgrey">Rs. 50 - 100Crore</p>
+            </div>   
+        </div>
+        <div>
+            <div class="boxicon"> <span class="arrange"><i class="fa-solid fa-globe"></i></span></div>
+            <div class="cont">
+                <p class="aboutgrey">Import Export Code (IEC)</p>
+                <p class="blk aboutgrey">05040*****</p>
+            </div>   
+        </div>
+        <div>
+            <div class="boxicon"><span class="arrange"><i class="fa-solid fa-clipboard"></i></span></div>
+            <div class="cont">
+                <p class="aboutgrey">GST Number</p>
+                <p class="blk aboutgrey">07AACCB1155C1ZB</p>
+            </div>   
+        </div>
+    </div>
+
+    <!-- Product and service -->
+        <h1 id="abt" >Product and Services</h1>
+        <hr class="rounded">
+
+        <div id="Products"></div>
+
+        <div class="btn"><button class="rangebtn"><a href="veiwData.html">View Complete Range</a></button></div>
+ 
+</body>
+</html>
+
+<script>
+     
+     var readbtn = document.querySelector("#readme")
+     readbtn.addEventListener("click", readme)
+
+     function readme(){
+         window.location.href= "AboutUs.html"
+     }
+
+     var box = document.querySelector("#Products")
+
+     var bheavenProducts=[
+    
+    {
+        image_url:'https://3.imimg.com/data3/WJ/EO/MY-3792183/01-500x500.jpg' ,
+        productName :'Sindoor' ,
+        category:'Traditional Items',
+        price:100 ,
+        brand:'Blue Heaven Cosmetics' ,
+        location:'Kirti Nagar, New Delhi, Delhi' ,
+        feature: 'Compact'
+    }
+    ,
+    {
+        image_url:'https://3.imimg.com/data3/QC/FL/MY-3792183/fairness-scrub-500x500.jpg' ,
+        productName :'Fairness Scrub' ,
+        category:'Makeup',
+        price:199 ,
+        brand:'Blue Heaven Cosmetics' ,
+        location:'Kirti Nagar, New Delhi, Delhi' ,
+        feature: 'face pack'
+    }
+    ,
+    {
+        image_url:'https://3.imimg.com/data3/NL/QG/MY-3792183/fruit-bleach-500x500.jpg' ,
+        productName :'Fruit Bleach' ,
+        category:'Bleach Cream',
+        price:259 ,
+        brand:'Blue Heaven Cosmetics' ,
+        location:'Kirti Nagar, New Delhi, Delhi' ,
+        feature: 'face beauty'
+    },
+    {
+        image_url:'https://3.imimg.com/data3/US/UJ/MY-3792183/lip-balm-500x500.jpg' ,
+        productName :'Lip Balm' ,
+        category:'LipCare',
+        price:58 ,
+        brand:'Blue Heaven Cosmetics' ,
+        location:'Kirti Nagar, New Delhi, Delhi' ,
+        feature: 'Lip Pack'
+    }
+    ,{
+        image_url:'https://3.imimg.com/data3/EJ/OU/MY-3792183/lip-gaurd-500x500.jpg' ,
+        productName :'Lip Gaurd' ,
+        category:'LipCare',
+        price:88 ,
+        brand:'Blue Heaven Cosmetics' ,
+        location:'Kirti Nagar, New Delhi, Delhi' ,
+        feature: 'beauty lips'
+    }
+    ,{
+        image_url:'https://4.imimg.com/data4/QI/AY/GLADMIN-3792183/2-250x250.jpg' ,
+        productName :'Coral Red Lipstick' ,
+        category:'LipCare',
+        price:60 ,
+        brand:'Blue Heaven Cosmetics' ,
+        location:'Kirti Nagar, New Delhi, Delhi' ,
+        feature: 'lip shine'
+    }
+    ,{
+        image_url:'https://4.imimg.com/data4/KD/IX/GLADMIN-3792183/4-250x250.jpg' ,
+        productName :'Pretty Purple Lipstick' ,
+        category:'LipCare',
+        price:40 ,
+        brand:'Blue Heaven Cosmetics' ,
+        location:'Kirti Nagar, New Delhi, Delhi' ,
+        feature: 'Pretty lip care'
+    }
+    ,{
+        image_url:'https://3.imimg.com/data3/ML/RO/MY-3792183/mascara-500x500.jpg' ,
+        productName :'Mascara' ,
+        category:'Eyes Products',
+        price:115 ,
+        brand:'Blue Heaven Cosmetics' ,
+        location:'Kirti Nagar, New Delhi, Delhi' ,
+        feature: 'Eye Liner'
+    }
+    ,];
+    
+     bheavenProducts.map(function(elem){
+         console.log(elem)
+        var pdiv = document.createElement("div")
+
+        var img = document.createElement("img")
+        img.setAttribute('class','pimg');
+        img.src = elem.image_url
+
+        var text = document.createElement("div")
+
+        // text.style.textDecoration = "underline"
+        // text.style.cursor = "pointer"
+        var category = document.createElement("h3")
+        category.setAttribute('class','cate')
+        category.innerText=elem.category
+        category.style.color="blue"
+        category.addEventListener("click", veiwData)
+
+        var name = document.createElement("p")
+        name.innerText= elem.productName
+        name.addEventListener("click", veiwData)
+
+        var brand = document.createElement("p")
+        brand.innerText=elem.brand
+        brand.addEventListener("click", veiwData)
+
+        var feature = document.createElement("p")
+        feature.innerText = elem.feature
+        feature.addEventListener("click", veiwData)
+
+        var veiwdetails = document.createElement("p")
+        veiwdetails.innerText= "Veiw Details >"
+        veiwdetails.style.color = "green"
+        veiwdetails.addEventListener("click", veiwData)
+        text.append(category,name,brand,feature,veiwdetails)
+
+
+        pdiv.append(img,text)
+
+        document.querySelector("#Products").append(pdiv)
+     })
+
+     function veiwData(){
+         window.location.href = "veiwData.html"
+     }
+</script>

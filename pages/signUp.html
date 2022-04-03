@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #leftbox{
+            height: 600px;
+            width: 20%;
+            background-color: blue;
+            padding: 7px;
+        }
+
+        #imbox{
+            width: 96%;
+            height: 270px;
+            background-color: white;
+            margin: auto;
+        }
+
+        #blueimg{
+            height: 150px;
+            width: 150px;
+            margin: 55px 55px 55px 55px;
+        }
+
+        #blimg{
+            height: 150px;
+            width: 150px;
+            padding-left: 55px;
+        }
+
+        #sp{
+            color: white;
+            padding: 15px;
+        }
+
+        span{
+            font-weight: bold;
+        }
+
+        #sign{
+            display: flex;
+        }
+
+        #form{
+            padding: 20px;
+        }
+
+        .ii{
+            height: 35px;
+            width: 400px;
+            margin: 15px;
+            border: 1px solid rgb(197, 196, 196);
+            border-radius: 4px;
+        }
+
+        #sup{
+            margin-top: -10px;
+            padding-left: 15px;
+        }
+
+        #ble{
+            color: blue;
+        }
+
+        #signb{
+            border: none;
+            background-color: rgb(68, 192, 151);
+            color: white;
+            padding: 13px 70px 13px 70px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        #signb:hover{
+            filter: brightness(90%);
+        }
+
+        #supa{
+            margin-top: 10px;
+            padding-left: 15px;
+        }
+
+        #show{
+            margin-top: 55px;
+            padding-left: 15px;
+        }
+
+        .p1{
+            margin-top: -10px;
+            padding-left: 15px;
+        }
+
+        .p2{
+            margin-top: -10px;
+            padding-left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="sign">
+        <div id="leftbox">
+            <div id="imbox"><img id="blueimg" src="https://3.imimg.com/data3/HJ/OY/MY-3792183/blue-heaven-cosmetics-private-limited-logo-120x120.jpg" alt=""></div>
+            <p id="sp">Blue Heaven Cosmetics (P) Ltd</p>
+            <p id="sp">Sold By - <span>Blue Heaven Cosmetics (P) Ltd, New Delhi, Delhi</span></p>
+            <img id="blimg" src="\images\2ef419dd92eaa5f61b4ec3de4801929f.jpg" alt="">
+        </div>
+        <form id="form">
+            <h1 id="hd">Sign Up to get in touch with the Suppliers</h1>
+            <input class="ii" type="name" id="name" placeholder="Enter Name"><br>
+            <input class="ii" type="email" id="email" placeholder="Enter Email">
+            <p id="sup">Suppliers will contact you on this email</p>
+            <input class="ii" type="text" id="city" placeholder="Type your city "><br>
+            <p id="sup">Suggestions: <span id="ble">Pune</span></p>
+            <input class="ii" type="number" id="mobile" placeholder="Enter Number"><br>
+            <div id="supa">
+                <input type="submit" id="signb">
+            </div>
+            <h4 id="show">Your Contact Information :</h4>
+            <p class="p1"></p>
+            <p class="p2"></p>
+        </form>
+    </div>
+
+</body>
+</html>
+
+<script>
+    document.querySelector("form").addEventListener("submit", signUp)
+     
+    var data = JSON.parse(localStorage.getItem("martSignUp")) ||[]
+    function signUp(){
+        event.preventDefault()
+        
+        var signObj = {
+            name: document.querySelector("#name").value,
+            email: document.querySelector("#email").value,
+            city: document.querySelector("#city").value,
+            mobile: document.querySelector("#mobile").value
+        }
+        data.push(signObj)
+        localStorage.setItem("martSignUp", JSON.stringify(data))
+
+        document.querySelector(".p1").append(signObj.email)
+        document.querySelector(".p2").append(signObj.mobile)
+    }
+</script>
