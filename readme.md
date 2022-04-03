@@ -26,7 +26,7 @@ This is the landing page of our website.
 
 
 ### Product and Service page
-All the products catogaries available are listed in this page.
+All the products categories available are listed in this page.
 ![Product&servicepage](/images/product%26servpage.png)
 
 ### About Us page
@@ -59,24 +59,56 @@ On clicking on the ask more button in product page you can book the required qty
 - Muhammed Fahiz
 - Subham Sharma
 - Tamilarasan
+
+
+ ## Team Contributions :-
+
+ ###  Deepak Kumar Singh
+*My Linkedin profile* :-https://www.linkedin.com/in/deepak-singh-07869421b
+
+First project forces us the search new things and provides opportunity for alot of learnings.
+1. I worked on some part of the home page tried clone it exactly like the original website's page specifically when it comes to the , footer(Here To Help), Ready to ship products ,Related categories and contact us.
+2. Apart from Home page,I have also created the, view more details page in product and services section.
+3. In this project ,I smell the work surrounding of professionals, and my team members are professional as well as supportive.
+And someother syncing functionality in this project was part of my job.
+
+ ###  Muhammed Fahiz
+ *My Linkedin profile* :- https://www.linkedin.com/in/muhammed-fahiz-p-a-62804515b/
+1. I worked on the home page.
+2. Both Navbars,product showcase widget, Get in touch with us, review and rating widget and readme.
+3. Worked on fixing the navbar and footer on all pages
+ and syncing all the pages, files and some bug fixing  are also done by me.
+
+ ###  Subham Sharma
+ *My Linkedin profile* :-https://www.linkedin.com/in/subham-sharma-1ab872229/
+
+ I have worked hard and smartly and I sigmented the problems in website building in small parts.
+1. I worked on the product page , I have created Related products from top suppliers as well as Product And Services pages.
+2. I also have created one of the most crucial part sign in/sign out pages and the checkout pages.
+
+3. I learn a lot of things in JavaScript, learn more about local storage, how to append, add the product to the cart, making sliding and drop-down pages, and also improved my HTML & CSS, I like working as a team, interact with each other professionally.
+4. I used HTML, CSS, JS, and Local-Storage ( to store and get data) and creative tags in JavaScript .
+
+ ###  Tamilarasan
+ *My Linkedin profile* :-https://www.linkedin.com/in/tamilarasan-r-a44965207/
+
+ I used many properties and learnt a lot of things from this project :-
+1. I used HTML, CSS, JS and Local Storage ( to store and get data).
+2. I have created About Us page, Enquiry Form and store the data in console.
+3. I created the side NAVBAR to improve the user interface of the website and also done some part of header NAVBAR.
+
+
+For this project, We had first collaborated on Git-hub, which made life easier even when We would working from home.
+For building our website we mainly used the concept tought in the lecture so far such as HTML, CSS, JAVASCRIPT and the contribution of these are as follows:-
+- HTML-45% 
+ - CSS-34%
+ -  JS-21%
 ## What we have learned?
  On this journey we faced many issues, but we keep motivated each other with patience. 
  By this Project we have learned how to collaborate and communicate with team effectively and improving the productivity. We learned how to be together in all the hurdles on the way . Also get good in understanding team members code.
 
  Source Code(GitHub link):- https://github.com/fahisayub/BlueHeavenClone
 
- ## Team Contributions :-
+We hope that Our effort will rain positive vibes.
 
- ###  Deepak Kumar Singh
-*my Linkedin profile* :-
-
- ###  Muhammed Fahiz
- *my Linkedin profile* :- https://www.linkedin.com/in/muhammed-fahiz-p-a-62804515b/
-1. I worked on the home page such as , Get in touch with us widget ,both Navbars,product showcase widget, review and rating widget and readme.
-2. Worked on fixing the navbar and footer on all pages
- and syncing all the pages, files and some bug fixing  are also done by me 
- ###  Subham Sharma
- *my Linkedin profile* :-
-
- ###  Tamilarasan
- *my Linkedin profile* :-
+### Thank you
