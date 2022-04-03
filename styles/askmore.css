@@ -1,11 +1,11 @@
 div{
-    height: 500px;
-    width: 500px;
+    border-radius: 5px;
+    width: 60%;
     margin: auto;
     align-items: center;
     justify-content: center;
     margin-top: 100px;
-    padding-left: 10px;
+    padding: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 #num,#piece{
@@ -50,6 +50,9 @@ button{
     color: white;
     background-color: rgb(41, 193, 193);
     margin-left: 0PX;
+    margin-top: 10px;
+    border:none;
+    border-radius: 5px;
 }
 button:hover{
     background-color: #00a699;

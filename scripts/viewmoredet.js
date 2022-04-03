@@ -232,9 +232,16 @@ blast.append(can)
 
         var btn = document.createElement("button")
         btn.setAttribute('class','vdbtn')
+        btn.addEventListener('click',function(){
+            askmorefn(elem);
+        })
         btn.innerText= 'Ask for Detail'
         btn.style.backgroundColor = "teal"
 
         box.append(name,img,p, btn)
         container.append(box)
     })
+
+    function askmorefn(elem){
+        window.location.href="/pages/askmore.html"
+    }
