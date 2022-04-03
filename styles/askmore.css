@@ -1,13 +1,13 @@
 div{
     height: 500px;
     width: 500px;
-    border: 1px solid;
     margin: auto;
     align-items: center;
     justify-content: center;
     margin-top: 100px;
+    padding-left: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-
 #num,#piece{
     border-radius: 1px;
     height: 30px;
@@ -16,32 +16,31 @@ div{
     color: black;
     gap: 0px;
     border: 1px solid teal;
-    
 }
 #select_value{
     border-radius: 7px;
     height: 35px;
-    width: 170px;
+    width: 200px;
     border: 1px solid turquoise;
 }
-.use{
+#use{
     height: 100px;
     width: 400px;
-    border: px solid black;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     text-decoration: none;
-
+    margin: auto;
+    margin-left: 1px;
+    padding-left: 1px;
 }
-.use>div{
+#use>div{
     height: 40px;
     width: 110px;
-    border: 1px solid black;
+    border: 1px solid;
     text-align: center;
-    justify-content: center;
+    padding-top: 8px;
     border-radius: 10px;
-    margin-top: 10px;
+    margin: auto; 
 }
 button{
     height: 40px;
@@ -50,6 +49,7 @@ button{
     cursor: pointer;
     color: white;
     background-color: rgb(41, 193, 193);
+    margin-left: 0PX;
 }
 button:hover{
     background-color: #00a699;
