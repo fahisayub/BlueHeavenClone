@@ -7,7 +7,7 @@
     <title>Document</title>
 
     <style>
-        #main{
+        #mainrc{
             display:grid;
             grid-template-columns: repeat(3,1fr);
             grid-template-rows: auto;
@@ -17,16 +17,16 @@
             /* border :1px solid red; */
 
         }
-        #main>div{
+        #mainrc>div{
             /* border:1px solid blue; */
             display:flex;
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         }
-        .can1{
+        .can1rc{
             border:1px solid rgb(243, 243, 239);
             width:33%;
         }
-        .can2{
+        .can2rc{
             padding-top:50px;
             font-family: Arial, Helvetica, sans-serif;
             font-weight:700;
@@ -36,12 +36,12 @@
 </head>
 <body>
     <h1 style="font-family: arial;font-size:26px;margin-left:20px;">Related categories</h1>
-    <div id="main" ></div>
+    <div id="mainrc" ></div>
 </body>
 </html>
 
 <script>
-    var relCat=[
+    var relCatrc=[
     {
         image_url:'https://3.imimg.com/data3/EP/VJ/GLADMIN-105850/cosmetics-250x250.jpg' ,
         category :'Cosmetics' ,
@@ -73,17 +73,17 @@
         
     },
 ]
-relCat.map(function(elem){
+relCatrc.map(function(elem){
     var box=document.createElement("div");
     var image=document.createElement("img");
   image.src=elem.image_url;
-  image.setAttribute("class","can1");
+  image.setAttribute("class","can1rc");
     
     var name=document.createElement("h2");
     name.textContent=elem.category;
-    name.setAttribute("class","can2");
+    name.setAttribute("class","can2rc");
     box.append(image,name);
-    document.querySelector("#main").append(box);
+    document.querySelector("#mainrc").append(box);
     
 })
 

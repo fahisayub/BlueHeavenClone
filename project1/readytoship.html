@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .head{
+        .headrtp{
             /* border:1px solid red; */
             padding-left:20px;
             font-size:26px;
@@ -14,14 +14,14 @@
             font-weight:bold;
             font-family:Arial, Helvetica, sans-serif;
         }
-        #tank{
+        #tankrtp{
         display: grid;
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: auto;
         gap:4px;
         
         }
-        #tank>div{
+        #tankrtp>div{
             border:1px solid #f0e8e8 ;
             background-color: #e9eaec;
             border-radius: 10px;
@@ -29,41 +29,47 @@
             align-items: center;
            
         }
-        .can1
+        .can1rtp
         {
            height:125px;
           width:100%;  
           
         }
-        .can2
+        .can2rtp
         { 
           color:blue;
           font-weight:400; 
-          padding-left:25px 
+          padding-left:25px ;
+          
         }
-        .can3{
+        .can2rtp:hover{
+            text-decoration:underline;
+        }
+        .can3rtp{
             padding-left:25px
         }
-        .can4{
+        .can4rtp{
             font-weight:400;
             padding-left:25px
         }
-        .canbtn{
+        .canbtnrtp{
             padding: 7px 30px;
     border-radius: 20px;
     background: #00a699;
     border: 1px solid #038379;
     margin-left:25px;
-    /* display: inline-block; */
-    /* text-align:center; */
+       }
 
-        }
+       .canbtnrtp:hover{
+           filter:brightness(70%);
+           cursor:pointer
+       }
         
     </style>
 </head>
 <body>
-    <h2 class="head">Ready to ship product in similar categories</h2>
-   <div id="tank">
+    <h2 class="headrtp">Ready to ship product in similar categories</h2>
+   <div id="tankrtp">
 
    </div>
      
@@ -138,28 +144,32 @@ rtp.map(function(elem){
 
   var image=document.createElement("img");
   image.src=elem.image_url;
-  image.setAttribute("class","can1");
+  image.setAttribute("class","can1rtp");
   var name=document.createElement("h4");
   name.textContent=elem.productName;
-  name.setAttribute("class","can2");
+  name.setAttribute("class","can2rtp");
   var price=document.createElement("h2");
   price.textContent=elem.price;
-  price.setAttribute("class","can3");
+  price.setAttribute("class","can3rtp");
   var btn = document.createElement("button")
         btn.innerText= 'Buy Now'
+
         btn.setAttribute("class","canbtn");
         btn.addEventListener("click", function(){
             addToCart(elem)
         })
         
+//=======
+        btn.setAttribute("class","canbtn");
+
   var brand=document.createElement("h5");
   brand.textContent=elem.brand;
-  brand.setAttribute("class","can4");
+  brand.setAttribute("class","can4rtp");
 
   box.append(image,name,price,btn,brand);
   
 
-  document.querySelector("#tank").append(box)
+  document.querySelector("#tankrtp").append(box)
 
 });
      //JSON.parse(localStorage.getItem("shipping"))

@@ -1,3 +1,4 @@
+//-----------------------product showcase-----------------------------//
 var bheavenProducts=[
     
     {
@@ -118,7 +119,6 @@ var bheavenProducts=[
     bheavenProducts.map(function(elem){
         
 var product=document.createElement('div');
-var image=elem.image_url;
 product.style.backgroundImage=`url(${elem.image_url})`;
 var namebox=document.createElement('div');
 namebox.setAttribute('id','name');
@@ -132,6 +132,8 @@ product.append(namebox);
 document.querySelector('#showcase').append(product);
 
     });
+
+    //--------------------------products and services--------------------------//
 
     var readbtn = document.querySelector("#readme")
      readbtn.addEventListener("click", readme)

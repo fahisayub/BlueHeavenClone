@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+
+        .main{
+            width: 40%;
+            margin: auto;
+            padding: 15px;
+            text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+            rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+            rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+
         form>input{
             height: 30px;
             width: 300px;
@@ -25,9 +37,9 @@
         #order{
             height: 100px;
             width: 400px;
-            border: 1px solid rgb(0, 0, 0);
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             border-radius: 7px;
-            margin: 15px;
+            margin: auto;
             display: flex;
         }
 
@@ -40,26 +52,25 @@
 
         #box{
             margin-left: 15px;
-            color: white;
         }
 
-        body{
-            background-color: palevioletred;
-        }
+
     </style>
 </head>
 <body>
-    <h1>Checkout Page</h1>
+<div class="main">
+    <h1 class="H">Make Payment/Checkout</h1>
 
     <div id="order"></div>
 
     <form>
         <input type="number" placeholder="enter 16 digit card number" id="cardNo"><br>
-        <input type="password" placeholder="enter cvv 3" id="cvv"><br>
+        <input type="password" placeholder="enter 3 digit cvv" id="cvv"><br>
         <input type="date" id="date"><br>
-        <input type="password" placeholder="enter otp 6" id="otp"><br>
+        <input type="password" placeholder="enter 6 digit otp" id="otp"><br>
         <input type="submit" id="btnc">
     </form>
+</div>
 </body>
 </html>
 
