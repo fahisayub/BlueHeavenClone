@@ -7,6 +7,9 @@ The project we got alloted is to clone the website of Blue Heaven Cosmetics Pvt.
 
 We tried our best to clone the website in  this limited time of one week. Actually this was a tough journey for me and my team members to do complete this in given time,
 because we have no pior experience in collaboration. However our team was so great that can understand each ones potential and assign the task ourself and get it done on time.
+
+Deploy link: https://chimerical-empanada-f4a3f8.netlify.app/
+
 ## Tech Stack used
 1. HTML
 2. CSS
